@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <!--
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel-"stylesheet" href="../index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -19,22 +23,55 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>React App</title>
+</head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="container">
+    <div id="upper">
+      <button id="onBtn"></button>
+      <div class="nest"></div>
+      <div class="nest"></div>
+      <div class="nest"></div>
+      </div>
+    <hr />
+    <div id="lower">
+      <div id="screen"></div>
+      <button class="btn drumPad" accesskey="q">Q</button>
+      <button class="btn drumPad" accesskey="w">W</button>
+      <button class="btn drumPad" accesskey="e">E</button>
+      <p class="drumPadText">HEATER1/ CHORD1</p>
+      <p class="drumPadText">HEATER2/ CHORD2</p>
+      <p class="drumPadText">HEATER3/ CHORD3</p>
+      <div id="radioDiv">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <label for="heater"><input type="radio" id="heater" name="mode" checked/>HEATER<label>
+
+          <label for="piano">  <input type="radio" id="piano" name="mode"/>SMOOTH PIANO<label>
+      </div>
+      <button class="btn drumPad" accesskey="a">A</button>
+      <button class="btn drumPad" accesskey="s">S</button>
+      <button class="btn drumPad" accesskey="d">D</button>
+      <p class="drumPadText">HEATER4/ SHAKER</p>
+      <p class="drumPadText">CLAP/ SIDE STICK</p>
+      <p class="drumPadText">OPEN HH</p>
+      <button class="btn drumPad" accesskey="z">Z</button>
+      <button class="btn drumPad" accesskey="x">X</button>
+      <button class="btn drumPad" accesskey="c">C</button>
+      <p class="drumPadText">KICK’n’HAT/ SNARE</p>
+      <p class="drumPadText">KICK</p>
+      <p class="drumPadText">CLOSED HH</p>
+      <h1>DRUMY ANALOG<h1>
+    </div>
+  </div>
+  <div id="textDiv">
+    <p class="instructions">1. Click “on” button to turn on</p>
+    <p class="instructions">2. Click HEATER or SMOOTH PIANO to choose mode</p>
+    <p class="instructions">3. Click drum padds or use your keyboard to play drum machine!</p>
+  </div>
+</body>
+
 </html>

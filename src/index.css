@@ -1,2 +1,142 @@
+html {
+  font-size: 0.8vw;
+}
+
 body {
-background-color: #F3BE40;}
+  background-color: #F3BE40;
+}
+
+#textDiv{
+width: 25rem;
+position: absolute;
+left: 65vw;
+top: 27vh;
+}
+
+.instructions {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+  color: #222325;
+ text-align: left;
+}
+
+#container {
+  width: 68.1rem;
+  height: 40rem;
+  background: #222325;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
+  border-radius: 1.2rem;
+  position: absolute;
+  left: 5vw;
+  top: 17vh;
+}
+#upper{
+height: 11.7rem;
+}
+hr{
+height: 0.005rem;
+background: #fff;
+width: 64rem;
+}
+/*upper part of drum machine*/
+#onBtn{
+width:5rem;
+height:5rem;
+border-radius: 50%;
+border:none;
+background: url(pictures/onBtn.svg);
+background-size:5rem;
+position: absolute;
+top:4.27rem;
+left:3.1rem;
+box-shadow: 0.27rem 0.27rem 0.27rem rgba(0, 0, 0, 0.25);
+}
+.nest{
+  width:4rem;
+  height:4rem;
+  border-radius: 50%;
+  border:none;
+  background: url(pictures/nestBtn.svg);
+  background-size:4rem;
+  position: absolute;
+  top:4.27rem;
+}
+.nest:nth-of-type(1){
+left:50rem;
+}
+.nest:nth-of-type(2){
+left:55rem;
+}
+.nest:nth-of-type(3){
+left:60rem;
+}
+/*lower part of drum machine*/
+#lower{
+margin-left:3.1rem;
+margin-right:3.1rem;
+display: grid;
+grid-template-columns: 4fr 1fr 1fr 1fr;
+column-gap: 3.5rem;
+padding-top: 1rem;
+}
+h1{
+position:absolute;
+font-family: 'Kelly Slab', cursive;
+font-size: 3.3rem;
+letter-spacing: 0.1em;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+color: #F2B343;
+top: 33rem;
+left: 1rem;
+}
+#screen{
+background: #121111;
+border: 0.02rem solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 0.34rem;
+box-shadow: inset 0.27rem 0.27rem 0.27rem rgba(0, 0, 0, 0.5);
+}
+/*RADIO*/
+#radioDiv{
+grid-row: 2/7;
+padding-top: 1.5rem;
+}
+label{
+display:block;
+font-family: 'Roboto Mono',monospace;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 1.24rem;
+letter-spacing: 0.1em;
+color: #FFFFFF;
+}
+[type="radio"]{
+margin:2rem;
+}
+/*drumpads*/
+.btn{
+background: #B0B3B8;
+border: none;
+border-radius: 0.34rem;
+height:4.9rem;
+font-family: 'Roboto Mono', monospace;
+font-size: 3.3rem;
+text-align: center;
+line-height: 0.25em;
+letter-spacing: 0.1em;
+box-sizing: border-box;
+color: #3F4042;
+box-shadow: 0.27rem 0.27rem 0.27rem rgba(0, 0, 0, 0.25);
+}
+.drumPadText{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.89rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFF;
+  margin:0.5rem;
+}
