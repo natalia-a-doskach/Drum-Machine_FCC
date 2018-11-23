@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <link rel-"stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../src/index.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Kelly+Slab" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +23,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
+  <title>Drumy Analog</title>
 </head>
 
 <body>
@@ -47,11 +47,15 @@
       <p class="drumPadText">HEATER2/ CHORD2</p>
       <p class="drumPadText">HEATER3/ CHORD3</p>
       <div id="radioDiv">
-
-        <label for="heater"><input type="radio" id="heater" name="mode" checked/>HEATER<label>
-
-          <label for="piano">  <input type="radio" id="piano" name="mode"/>SMOOTH PIANO<label>
+        <div class="indivRadio">
+        <input type="radio" id="heater" name="mode" checked/>
+        <label for="heater"><span class="checkbox"></span>HEATER<label>
+        </div>
+        <div class="indivRadio">
+          <input type="radio" id="piano" name="mode"/>
+          <label for="piano"><span class="checkbox"></span>SMOOTH PIANO<label>
       </div>
+    </div>
       <button class="btn drumPad" accesskey="a">A</button>
       <button class="btn drumPad" accesskey="s">S</button>
       <button class="btn drumPad" accesskey="d">D</button>
