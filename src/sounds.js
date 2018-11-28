@@ -1,5 +1,5 @@
 export const sounds = {
-  "Q": [["HEATER1",  "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"],
+  Q: [["HEATER1",  "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"],
     ["CHORD1",  "https://s3.amazonaws.com/freecodecamp/drums/Chord_1.mp3"]],
   W: [
     ["HEATER2",  "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"],
@@ -22,7 +22,7 @@ export const sounds = {
     ["OPEN HH", "https://s3.amazonaws.com/freecodecamp/drums/Dry_Ohh.mp3"]
   ],
   Z: [
-    ["KICK\'n\'HAT", "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"],
+    ["KICK'n'HAT", "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"],
     ["SNARE",  "https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"]
   ],
   X: [
